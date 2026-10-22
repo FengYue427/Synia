@@ -4,11 +4,11 @@ $ua = "Synia/0.1 (local-prep)"
 $mods = Join-Path $PSScriptRoot "..\mods"
 New-Item -ItemType Directory -Force -Path $mods | Out-Null
 
+# YACL 3.8.2 在 Connector 2.x 上因 refmap 缺失崩溃，暂不纳入。Debugify 闭环不依赖它。
 $downloads = @(
   @{ name = "connector-2.0.0-beta.17+1.21.1-full.jar"; url = "https://cdn.modrinth.com/data/u58R1TMW/versions/IITF0PRC/connector-2.0.0-beta.17%2B1.21.1-full.jar" },
   @{ name = "forgified-fabric-api-0.116.15+2.3.6+1.21.1.jar"; url = "https://cdn.modrinth.com/data/Aqlf1Shp/versions/C4eskNuR/forgified-fabric-api-0.116.15%2B2.3.6%2B1.21.1.jar" },
-  @{ name = "Debugify-1.21.1+1.1.jar"; url = "https://cdn.modrinth.com/data/QwxR6Gcd/versions/pyIdu3f1/Debugify-1.21.1%2B1.1.jar" },
-  @{ name = "yet_another_config_lib_v3-3.8.2+1.21.1-fabric.jar"; url = "https://cdn.modrinth.com/data/1eAoo2KR/versions/o3cDn8Vp/yet_another_config_lib_v3-3.8.2%2B1.21.1-fabric.jar" }
+  @{ name = "Debugify-1.21.1+1.1.jar"; url = "https://cdn.modrinth.com/data/QwxR6Gcd/versions/pyIdu3f1/Debugify-1.21.1%2B1.1.jar" }
 )
 
 foreach ($d in $downloads) {

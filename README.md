@@ -46,6 +46,7 @@
 Synia/
   docs/ARCHITECTURE.md
   docs/MODULE_PIPELINE.md
+  docs/PUBLISH.md
   docs/ROADMAP.md
   docs/VERIFICATION.md
   patches/

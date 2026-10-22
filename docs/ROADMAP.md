@@ -29,7 +29,7 @@ Connector 3.x（26.x）的官方扩展入口是 `TransformerPlugin`：可以对�
 
 ## 第二个模块何时开工
 
-下面三条满足任意两条，才进入流水线。同一帖里的跟帖算一个来源。
+与 [MODULE_PIPELINE.md](MODULE_PIPELINE.md) 第 1 节是同一组条件，不另列条目。下面三条满足任意两条，才进入流水线。同一帖里的跟帖算一个来源。
 
 1. 至少 3 个独立来源报告同一个模组的同一故障（GitHub issue、Modrinth 评论、MC百科留言等）。
 2. 该模组有明确入口，且原因单一（配置、单个 Mixin 或单个缺失类）。
@@ -39,6 +39,6 @@ Connector 3.x（26.x）的官方扩展入口是 `TransformerPlugin`：可以对�
 
 ## 发布
 
-第一轮只准备两处，且都等明确点头后再发出：Modrinth 项目页，以及 Connector Discussions 里的同一段说明。两处都写明：NeoForge 1.21.1、Connector 2.x、early service、放入 `mods`、只处理 `MC-93384` / `MC-176559`、杀开关、加载不等于生效、非官方外围补丁，不是 Connector 的一部分。
+第一轮只准备两处，且都等明确点头后再发出：Modrinth 项目页，以及 Connector Discussions。两处粘贴 [PUBLISH.md](PUBLISH.md) 里的同一段话，其中写明非官方外围补丁，不是 Connector 的一部分。
 
 CurseForge 和 MC百科不在这一轮。
