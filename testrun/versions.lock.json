@@ -1,0 +1,27 @@
+﻿{
+    "minecraft":  "1.21.1",
+    "loader":  "neoforge",
+    "prepared_at":  "2026-10-22T10:55:26.7951065+08:00",
+    "mods":  [
+                 {
+                     "bytes":  4573244,
+                     "file":  "connector-2.0.0-beta.17+1.21.1-full.jar"
+                 },
+                 {
+                     "bytes":  289699,
+                     "file":  "Debugify-1.21.1+1.1.jar"
+                 },
+                 {
+                     "bytes":  5612888,
+                     "file":  "forgified-fabric-api-0.116.15+2.3.6+1.21.1.jar"
+                 },
+                 {
+                     "bytes":  9563,
+                     "file":  "synia-debugify-0.1.0.jar"
+                 },
+                 {
+                     "bytes":  1131265,
+                     "file":  "yet_another_config_lib_v3-3.8.2+1.21.1-fabric.jar"
+                 }
+             ]
+}
