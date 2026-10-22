@@ -11,3 +11,5 @@ Synia 是非官方外围补丁，不是 Connector 的一部分，也不修改 Co
 杀开关要在启动前设置环境变量 `SYNIA_DEBUGIFY_ENABLED=false`。已经打开的 PCL 不会重读 JVM 附加参数。加载不等于生效：日志里出现 `synia:debugify` 只说明服务被加载，还要看写入是否早于 Debugify，以及行为是否改变。
 
 反馈哪些模组在 1.21.1 上有类似的、入口明确的冲突。验证流程在仓库的 `docs/MODULE_PIPELINE.md`。
+
+下载 jar 请用 Releases / Modrinth 附件；源码最新状态在 master 分支，tag `synia-debugify-0.1.0` 指向首个闭环提交。jar 本身在该 tag 之后没有改动。

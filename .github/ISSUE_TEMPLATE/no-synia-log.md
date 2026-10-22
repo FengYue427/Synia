@@ -7,6 +7,8 @@ labels: []
 
 本机路径可以打码。
 
+- [ ] 我已阅读 VERIFICATION.md 第 5 节，确认日志里没有 `[synia:debugify]` 相关行
+
 - 启动器：是否使用 PCL？是否在启动前设置了 `SYNIA_DEBUGIFY_ENABLED`？
 - Minecraft / NeoForge 版本：
 - Connector 版本：
