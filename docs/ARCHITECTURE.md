@@ -9,7 +9,7 @@ Connector 的外围「兼容性外科医生」：按模组拆分的精准门控�
 | 通道 | Connector | Synia 交付方式 |
 |------|-----------|----------------|
 | **1.21.1 LTS（当前）** | 2.x | early FML service（`IModFileCandidateLocator`）+ 配置/行为门控 |
-| 26.x | 3.x | 官方 `TransformerPlugin` / `MethodPatch`（尚未实现；升级时另开模块） |
+| 26.x | 3.x | 官方 `TransformerPlugin` / `MethodPatch`（尚未实现；形态未定，见 [ROADMAP.md](ROADMAP.md)） |
 
 本仓库补丁默认标注为 **Connector 2.x / Minecraft 1.21.1 专用**。  
 不要期望它们在 Connector 3.x 上自动等价；3.x 应走 TransformerPlugin，避免双重干预。

@@ -35,7 +35,7 @@
 
 | 结果 | 含义 | 动作 |
 |------|------|------|
-| `PASS` 且 `MC-93384=false, MC-176559=false` | 落盘内容正确 | 继续 ④ |
+| `PASS` 且 `MC-93384=false, MC-176559=false` | 落盘内容正确，且审计的就是 Debugify 读取的 `config/debugify.json` | 继续 ④ |
 | **`FAIL`** | 写入路径与期望不一致，或写后读回不对 | **停**。比时序更底层：核对 `FMLPaths.GAMEDIR` → `config/debugify.json` 是否即 Debugify 实际读取路径 |
 
 ### ④ Debugify：`Preloading Debugify`（或等价预加载日志）

@@ -3,8 +3,10 @@
 面向 [Sinytra Connector](https://github.com/Sinytra/Connector) 的**外围兼容性补丁集**。  
 定位是「兼容性外科医生」：按模组拆分、条件门控、独立发布——不修改 Connector 翻译引擎本身。
 
+本项目维护一条可复用的微创门控流水线。单个补丁的有效性随上游变化；上游修好对应冲突后，该模块退役，流水线保留。
+
 > **版本边界：Connector 2.x / Minecraft 1.21.1 专用。**  
-> Connector 3.x 的 `TransformerPlugin` 是更干净的入口；本 early-service 路径不保证在 3.x 上适用或无冲突。详见 [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)。
+> Connector 3.x 有 `TransformerPlugin`，但 Debugify 在 3.x 上的具体门控形态还没定。见 [docs/ROADMAP.md](docs/ROADMAP.md)。本 early-service 路径不保证在 3.x 上适用或无冲突。架构约束见 [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)。
 
 ## 模块状态
 
@@ -44,6 +46,7 @@
 Synia/
   docs/ARCHITECTURE.md
   docs/MODULE_PIPELINE.md
+  docs/ROADMAP.md
   docs/VERIFICATION.md
   patches/
     debugify/          # 首个已闭环补丁，tag synia-debugify-0.1.0
@@ -54,11 +57,9 @@ Synia/
 
 ## 构建
 
-需要 **JDK 21**（Gradle Kotlin DSL 在部分 JDK 25 上会失败）：
+需要 **JDK 21**（Gradle Kotlin DSL 在部分 JDK 25 上会失败）。把 `JAVA_HOME` 指到本机的 JDK 21 后执行：
 
 ```powershell
-$env:JAVA_HOME = "C:\Program Files\Java\jdk-21"
-$env:Path = "$env:JAVA_HOME\bin;$env:Path"
 ./gradlew.bat :patches:debugify:build
 ```
 

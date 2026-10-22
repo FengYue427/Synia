@@ -19,12 +19,7 @@ foreach ($d in $downloads) {
 
 $built = Join-Path $PSScriptRoot "..\..\patches\debugify\build\libs\synia-debugify-0.1.0.jar"
 if (-not (Test-Path $built)) {
-    Write-Host "Building synia-debugify ..."
-    Push-Location (Join-Path $PSScriptRoot "..\..")
-    try {
-        $env:JAVA_HOME = "C:\Program Files\Java\jdk-21"
-        .\gradlew.bat :patches:debugify:jar -q
-    } finally { Pop-Location }
+    throw "Missing synia-debugify jar. Build it with JDK 21: ./gradlew.bat :patches:debugify:jar"
 }
 Copy-Item $built (Join-Path $mods "synia-debugify-0.1.0.jar") -Force
 Write-Host "OK -> $mods"
